@@ -1,0 +1,10 @@
+<% layout("./layouts/layout.eta") %>
+
+<% if (it.lists === null) { %>
+<h1>No shopping lists yet.</h1>
+<% } else { %>
+<ul>
+<li>Shopping lists: <%= it.lists %> </li>
+<li>Shopping list items: <%= it.ingredients %> </li>
+</ul>
+<% } %>

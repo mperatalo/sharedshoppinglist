@@ -1,0 +1,33 @@
+<% layout("./layouts/layout.eta") %>
+
+<h1><%= it.list.name %></h1>
+
+<form method="POST" action="/lists/<%= it.list.id %>/items">
+  <input type="text" name="name" />
+  <input type="submit" value="Add an ingredient" />
+</form>
+
+<h2>Ingredients</h2>
+
+<ul>
+<% it.unCollectedIngredients.forEach((ingredient) => { %>
+
+    <li>
+    <%= ingredient.name %>
+    <form method="POST" action="/lists/<%= it.list.id %>/items/<%= ingredient.id %>/collect">
+    <input type="submit" value="Mark collected" />
+    </form>
+    </li>
+<% }); %>
+
+<% it.collectedIngredients.forEach((ingredient1) => { %>
+
+    <li>
+    <del><%= ingredient1.name %></del>
+    </li>
+<% }); %>
+
+</ul>
+
+<a href="/lists"> Shopping lists </a>
+
