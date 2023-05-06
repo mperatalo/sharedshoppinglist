@@ -8,3 +8,5 @@
 <li>Shopping list items: <%= it.ingredients %> </li>
 </ul>
 <% } %>
+
+<a href="/lists"> Lists </a>

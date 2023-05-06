@@ -1,4 +1,4 @@
-<% layout("./layouts/layout.eta") %>
+<% layout("./layouts/layout_lists.eta") %>
 
 <h1><%= it.list.name %></h1>
 

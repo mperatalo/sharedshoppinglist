@@ -15,3 +15,9 @@ The application uses PostgresSQL database and flyway to keep up with the changes
 
 
 The application can be launched and tested locally with Docker Compose by typing the command "docker compose up" (with older docker compose versions: "docker-compose up") and then accessing the site http://localhost:7777/
+
+Link to the online web application (via Render)
+
+https://sharedshoppinglist.onrender.com/ 
+
+
