@@ -18,6 +18,6 @@ The application can be launched and tested locally with Docker Compose by typing
 
 Link to the online web application (via Render)
 
-https://sharedshoppinglist.onrender.com/ 
+https://sharedshoppinglist.onrender.com/ (free edition database support ended, doesn't work anymore)
 
 
